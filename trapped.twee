@@ -8,12 +8,16 @@
 }
 
 :: StoryTitle
-My test story!
+Trapped in Tucson
 
 :: Start
-This is the first passage in a Twine game!
+Tucson, Arizona in the not-so-distant future. Persistent drought, increasing
+temperatures, and pumping too much ground water; combined with the loss of 
+external water sources, like Colorado River water, has led to this city of
+over one million people shrinking to only 10,000 inhabitants - most of whom 
+couldn't afford to leave.
 
-[[This is a link|Next Passage]]
+[[>|Next Passage]]
 
 
 :: Next Passage
