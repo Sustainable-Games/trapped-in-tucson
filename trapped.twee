@@ -10,6 +10,15 @@
 :: StoryTitle
 Trapped in Tucson
 
+:: StoryInit 
+<<set $hunger to 0>>
+<<set $thirst to 0>>
+<<set $exhaustion to 0>>
+<<set $temperature to 100>>
+<<set $time to 1000>>
+<<set $day to 1>>
+<<set $inventory to []>>
+
 :: Start
 Tucson, Arizona in the not-so-distant future. Persistent drought, increasing temperatures, and pumping too much ground water; combined with the loss of Colorado River water, has led to this city of over one million people shrinking to only 10,000 inhabitants - most of whom couldn't afford to leave.
 
