@@ -14,9 +14,13 @@ Trapped in Tucson
 <<set $hunger to 0>>
 <<set $thirst to 0>>
 <<set $exhaustion to 0>>
+<<set $exposure to 0>>
+<<set $health to 100>>
+<<set $confusion to 0>>
 <<set $temperature to 100>>
 <<set $time to 1000>>
 <<set $day to 1>>
+<<set $elapsed_time to 0>>
 <<set $inventory to []>>
 
 :: Start
