@@ -24,55 +24,68 @@ Trapped in Tucson
 <<set $inventory to []>>
 
 :: Start
+!Trapped in Tucson
+!!On the road 
+
 Tucson, Arizona in the not-so-distant future. Persistent drought, increasing temperatures, and pumping too much ground water; combined with the loss of Colorado River water, has led to this city of over one million people shrinking to only 10,000 inhabitants - most of whom couldn't afford to leave.
 
 You are travelling west on I-10 seeking work and a safe place to live. You've heard the Pacific Northwest has weathered climate change pretty well, so far, and you hope to find a new home there.
 
-You're leaving Texas, where the same drought impacting all of the southwest has made life nearly impossible. The imapcts of climate change in Texas were made worse by a succession of rugged individualist governors who not only ignored the changes in the climate as they were becoming apparent, but actively opposed transitioning to renewable energy sources or conserving water. The crash of the oil markets was the end of the Texas economy. Now, no one wants to live there.
+You're leaving Texas, where the same drought impacting all of the southwest has made life nearly impossible. The crash of the oil markets was the end of the Texas economy. Now, no one wants to live there.
 
-That's how you find yourself driving west in your grandparents' old Honda Civic. It can be hard to find gas stations that are still open along the way but, fortunately, the old girl gets pretty good gas mileage. You mostly share the highway with autonomous semis taking goods to and from the automated Port of Los Angeles to the few remaining urban centers in the south. The people who could afford to have long since moved north.
+That's how you find yourself driving west in your grandparents' old Honda Civic. It can be hard to find gas stations that are still open along the way but, fortunately, the old girl gets pretty good gas mileage. You mostly share the highway with self-driving semis taking goods to and from the automated Port of Los Angeles to the few remaining urban centers in the south. The people who could afford to have long since moved north.
 
 As you approach an exit with a sign for Congress St, the check engine light comes on and smoke starts to curl from the edges of the hood. You take the exit and nurse the Honda into the Circle K lot at the bottom of the ramp.
 
-[[>|Circle K]]
+<<button [[Next|Circle K]]>><</button>>
 
 :: Circle K
+!!Circle K 
+
 The sign is so faded by the sun that the red logo is now a light pink. The gas pumps have been stripped down to a couple of pipes coming out of the slab and the roof over the island is collapsing. The asphalt is sticky in the heat of the day and the concrete is flaking away like layers of flint. The glass on the storefront was long ago broken out and covered with sheets of plywood, which are now warped and peeling and entirely covered with grafitti. A recent addition in large, colorful letters says 
 
 GET OUT while you can!
 
 Great idea, but obviously you aren't going anywhere in that old Civic. You take a closer look at the car. Nope. Definitely not going anywhere...there's an expanding pool of oil under the car and the smoke is just getting thicker.
 
-You reach into the backseat and grab your backpack. Then you look around to see if there's anything else you should take with you.
+You reach into the backseat and grab your backpack. <<run $inventory.push('backpack')>>Then you look around to see if there's anything else you should take with you.
 
 The clothes you planned to wear for job interviews are laid out on the seat: a long-sleeve white dress shirt and some tan khakis. There are also some dress shoes (which are not very comfortable, but they are sturdy). Your grandpa's grubby old, misshapen cowboy hat is on the ledge above the backseat. He was once a rancher, before it became too hard to feed and water his livestock. A truck stop travel mug is in the cup holder and, of course, the key chain still hangs from the ignition. The rabbit's foot on the key chain is so worn that there's barely any fur left on it. That rabbit foot wasn't any luckier for you than it was for the rabbit.
 
-What do you take?
+<<print $inventory.length>>
 
-
-
-<<button [[Look|State building parking garage]]>><</button>>
+<<button [[Check out the garage|State building parking garage]]>><</button>>
 
 :: State building parking garage
+!!State building parking garage 
+
+$inventory
+
 To the east of the Circle K is a large multi-level parking garage for the State of Arizona building. The concrete is cracking and some chunks have fallen (or been pushed) out of the walls. There are a number of rusting hulks parked there, including what looks like an entire fleet of abandoned state vehicles. In addition to graffiti, there are some makeshift shelters built from scavenged building materials. 
 
 As you approach, a barrage of rocks slams to the dirt around you. Apparently, the residents don't want to be disturbed.
 
-[[>|State office building]]
+<<button [[Look|State office building]]>><</button>>
 
 :: State office building
+!!State office building 
+
 Beyond the parking garage, you spot the State of Arizona office building through gaps in the walls and shelters of the garage...or what's left of it. It is a burned-out, hulking ruin.
 
 It seems someone expressed their displeasure with the state government before abandoning the city.
 
-[[>|Railroad tracks]]
+<<button [[Look south|Railroad tracks]]>><</button>>
 
 :: Railroad tracks
+!!Railroad tracks 
+
 Looking south, you see a single line of railroad tracks. They fade in and out of sight as they were covered up by the asphalt and concrete of the four lanes of Congress Boulevard and construction of parking lots and buildings that have since been torn down. They disappear completely to the north, but they seem to extend to the south at least as far as a building next to the tracks. The building looks like it could have been an old-fashioned railroad terminal. Apparently, the tracks were too much trouble to remove but the building was still useful. Unlike the other buildings around you, it looks like it could still be intact.
 
-[[>|El Paso and Southwestern depot]]
+<<button [[Check out the depot|El Paso and Southwestern depot]]>><</button>>
 
 :: El Paso and Southwestern depot
+!!El Paso and Southwestern depot
+
 As you approach the old terminal, you notice that the structure is intact but the windows are all broken out and the interior has been stripped. There is still a sign in masonry above the now empty doorway:
 
 E P & S W 

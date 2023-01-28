@@ -6,7 +6,12 @@
         {
             "label": "tweego build",
             "type": "shell",
-            "command": "tweego -o trapped/index.html trapped.twee"
+            "command": "tweego -o trapped/index.html trapped.twee",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
