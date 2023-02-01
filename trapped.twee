@@ -50,9 +50,9 @@ Great idea, but obviously you aren't going anywhere in that old Civic. You take 
 
 You reach into the backseat and grab your backpack. <<run $inventory.push('backpack')>>Then you look around to see if there's anything else you should take with you.
 
-The clothes you planned to wear for job interviews are laid out on the seat: a long-sleeve white dress shirt and some tan khakis. There are also some dress shoes (which are not very comfortable, but they are sturdy). Your grandpa's grubby old, misshapen cowboy hat is on the ledge above the backseat. He was once a rancher, before it became too hard to feed and water his livestock. A truck stop travel mug is in the cup holder and, of course, the key chain still hangs from the ignition. The rabbit's foot on the key chain is so worn that there's barely any fur left on it. That rabbit foot wasn't any luckier for you than it was for the rabbit.
+The clothes you planned to wear for job interviews are laid out on the seat: a long-sleeve white <<link 'dress shirt'>><<run $inventory.push('dress shirt')>><</link>> and some tan <<link 'khakis'>><<run $inventory.push('khakis')>><</link>>. There are also some <<link 'dress shoes'>><<run $inventory.push('dress shoes')>><</link>> (which are not very comfortable, but they are sturdy). Your grandpa's grubby old, misshapen <<link 'cowboy hat'>><<run $inventory.push('cowboy hat')>><</link>> is on the ledge above the backseat. He was once a rancher, before it became too hard to feed and water his livestock. A truck stop <<link 'travel mug'>><<run $inventory.push('mug')>><</link>> is in the cup holder and, of course, the <<link 'key chain'>><<run $inventory.push('keys')>><</link>> still hangs from the ignition. The rabbit's foot on the key chain is so worn that there's barely any fur left on it. That rabbit foot wasn't any luckier for you than it was for the rabbit.
 
-<<print $inventory.length>>
+To the east of the Circle K is a large multi-level parking garage.
 
 <<button [[Check out the garage|State building parking garage]]>><</button>>
 
@@ -61,20 +61,22 @@ The clothes you planned to wear for job interviews are laid out on the seat: a l
 
 $inventory
 
-To the east of the Circle K is a large multi-level parking garage for the State of Arizona building. The concrete is cracking and some chunks have fallen (or been pushed) out of the walls. There are a number of rusting hulks parked there, including what looks like an entire fleet of abandoned state vehicles. In addition to graffiti, there are some makeshift shelters built from scavenged building materials. 
+ The concrete is cracking and some chunks have fallen (or been pushed) out of the walls. There are a number of rusting hulks parked there, including what looks like an entire fleet of abandoned state vehicles. In addition to graffiti, there are some makeshift shelters built from scavenged building materials. 
 
 As you approach, a barrage of rocks slams to the dirt around you. Apparently, the residents don't want to be disturbed.
 
-<<button [[Look|State office building]]>><</button>>
-
-:: State office building
-!!State office building 
-
 Beyond the parking garage, you spot the State of Arizona office building through gaps in the walls and shelters of the garage...or what's left of it. It is a burned-out, hulking ruin.
 
-It seems someone expressed their displeasure with the state government before abandoning the city.
+It seems someone expressed their displeasure with the government before abandoning the city.
 
+You look around.
+
+<<button [[Look north|Road]]>><</button>>
 <<button [[Look south|Railroad tracks]]>><</button>>
+<<button [[Look west|Freeway underpass]]>><</button>>
+
+:: Road
+!!Road
 
 :: Railroad tracks
 !!Railroad tracks 
@@ -82,6 +84,9 @@ It seems someone expressed their displeasure with the state government before ab
 Looking south, you see a single line of railroad tracks. They fade in and out of sight as they were covered up by the asphalt and concrete of the four lanes of Congress Boulevard and construction of parking lots and buildings that have since been torn down. They disappear completely to the north, but they seem to extend to the south at least as far as a building next to the tracks. The building looks like it could have been an old-fashioned railroad terminal. Apparently, the tracks were too much trouble to remove but the building was still useful. Unlike the other buildings around you, it looks like it could still be intact.
 
 <<button [[Check out the depot|El Paso and Southwestern depot]]>><</button>>
+
+:: Freeway underpass
+!!Congress St underpass
 
 :: El Paso and Southwestern depot
 !!El Paso and Southwestern depot
