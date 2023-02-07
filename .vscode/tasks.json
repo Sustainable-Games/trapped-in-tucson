@@ -4,9 +4,19 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "tweego build",
+            "label": "tweego win build",
             "type": "shell",
             "command": "tweego -o trapped/index.html trapped.twee",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "tweego mac build",
+            "type": "shell",
+            "command": "$HOME/tweego-2.1.1-macos-x64/tweego -o trapped/index.html trapped.twee",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
