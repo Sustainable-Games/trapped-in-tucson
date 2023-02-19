@@ -121,9 +121,7 @@ You&#39;re leaving Texas, where the same drought impacting all of the southwest 
 
 That&#39;s how you find yourself driving west in your grandparents&#39; old Honda Civic. It can be hard to find gas stations that are still open along the way but, fortunately, the old girl gets pretty good gas mileage. You mostly share the highway with self-driving semis taking goods to and from the automated Port of Los Angeles to the few remaining urban centers in the south. The people who could afford to have long since moved north.
 
-As you approach an exit with a sign for Congress St, the check engine light comes on and smoke starts to curl from the edges of the hood. You take the exit and nurse the Honda into the Circle K lot at the bottom of the ramp.
-
-&lt;&lt;button [[Next|Circle K]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Circle K" tags="" position="350,100" size="100,100">!!Circle K 
+As you approach an exit with a sign for Congress St, the check engine light comes on and smoke starts to curl from the edges of the hood. You take the exit and nurse the Honda into the [[Circle K lot|Circle K]] at the bottom of the ramp.</tw-passagedata><tw-passagedata pid="3" name="Circle K" tags="" position="350,100" size="100,100">!!Circle K 
 
 The sign is so faded by the sun that the red logo is now a light pink. The gas pumps have been stripped down to a couple of pipes coming out of the slab and the roof over the island is collapsing. The asphalt is sticky in the heat of the day and the concrete is flaking away like layers of flint. The glass on the storefront was long ago broken out and covered with sheets of plywood, which are now warped and peeling and entirely covered with grafitti. A recent addition in large, colorful letters says 
 
@@ -131,13 +129,79 @@ GET OUT while you can!
 
 Great idea, but obviously you aren&#39;t going anywhere in that old Civic. You take a closer look at the car. Nope. Definitely not going anywhere...there&#39;s an expanding pool of oil under the car and the smoke is just getting thicker.
 
-You reach into the backseat and grab your backpack. &lt;&lt;run $inventory.push(&#39;backpack&#39;)&gt;&gt;Then you look around to see if there&#39;s anything else you should take with you.
+You reach into the backseat and grab your backpack. &lt;&lt;run $inventory.push(&#39;backpack&#39;)&gt;&gt;Then you [[look to see|Look for items]] if there&#39;s anything else you should take with you.</tw-passagedata><tw-passagedata pid="4" name="Look for items" tags="" position="475,100" size="100,100">A lightweight long-sleeve white unisex [[dress shirt|Dress shirt]] sits on top of some tan [[dress slacks|Dress slacks]]. A pair of [[dress shoes|Dress shoes]] are on the floor next to the clothes.
 
-The clothes you planned to wear for job interviews are laid out on the seat: a long-sleeve white &lt;&lt;link &#39;dress shirt&#39;&gt;&gt;&lt;&lt;run $inventory.push(&#39;dress shirt&#39;)&gt;&gt;&lt;&lt;/link&gt;&gt; and some tan &lt;&lt;link &#39;khakis&#39;&gt;&gt;&lt;&lt;run $inventory.push(&#39;khakis&#39;)&gt;&gt;&lt;&lt;/link&gt;&gt;. There are also some &lt;&lt;link &#39;dress shoes&#39;&gt;&gt;&lt;&lt;run $inventory.push(&#39;dress shoes&#39;)&gt;&gt;&lt;&lt;/link&gt;&gt; (which are not very comfortable, but they are sturdy). Your grandpa&#39;s grubby old, misshapen &lt;&lt;link &#39;cowboy hat&#39;&gt;&gt;&lt;&lt;run $inventory.push(&#39;cowboy hat&#39;)&gt;&gt;&lt;&lt;/link&gt;&gt; is on the ledge above the backseat. He was once a rancher, before it became too hard to feed and water his livestock. A truck stop &lt;&lt;link &#39;travel mug&#39;&gt;&gt;&lt;&lt;run $inventory.push(&#39;mug&#39;)&gt;&gt;&lt;&lt;/link&gt;&gt; is in the cup holder and, of course, the &lt;&lt;link &#39;key chain&#39;&gt;&gt;&lt;&lt;run $inventory.push(&#39;keys&#39;)&gt;&gt;&lt;&lt;/link&gt;&gt; still hangs from the ignition. The rabbit&#39;s foot on the key chain is so worn that there&#39;s barely any fur left on it. That rabbit foot wasn&#39;t any luckier for you than it was for the rabbit.
+Your grandpa&#39;s grubby old, misshapen [[cowboy hat|Cowboy hat]] is on the ledge above the backseat.
 
-To the east of the Circle K is a large multi-level parking garage.
+A mostly empty truck stop [[travel mug|Travel mug]] is in the cup holder. 
 
-&lt;&lt;button [[Check out the garage|State building parking garage]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="State building parking garage" tags="" position="475,100" size="100,100">!!State building parking garage 
+Of course, the [[key chain|Key chain]] still hangs from the ignition.</tw-passagedata><tw-passagedata pid="5" name="Dress shirt" tags="" position="600,100" size="100,100">&lt;&lt;if $inventory.includes(&#39;shirt&#39;)&gt;&gt;
+    Your shirt is already neatly folded up in a pocket in your backpack.
+&lt;&lt;else&gt;&gt;
+    You pick up the shirt, carefully fold it, and put it into your backpack.
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;run $inventory.push(&#39;shirt&#39;)&gt;&gt;
+
+[[You look for some more items.|Look for items]]
+
+[[That&#39;s everything worth taking, time to get moving!|Look around the Circle K]]</tw-passagedata><tw-passagedata pid="6" name="Dress slacks" tags="" position="725,100" size="100,100">&lt;&lt;if $inventory.includes(&#39;slacks&#39;)&gt;&gt;
+    Your slacks are already neatly folded up in a pocket in your backpack.
+&lt;&lt;else&gt;&gt;
+    You pick up the slacks, shake the wrinkes out, and put them in your backpack.
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;run $inventory.push(&#39;slacks&#39;)&gt;&gt;
+
+[[You look for some more items.|Look for items]]
+
+[[That&#39;s everything worth taking, time to get moving!|Look around the Circle K]]</tw-passagedata><tw-passagedata pid="7" name="Dress shoes" tags="" position="850,100" size="100,100">&lt;&lt;if $inventory.includes(&#39;shoes&#39;)&gt;&gt;
+    Your shoes are already stuffed into your backpack.
+&lt;&lt;else&gt;&gt;
+    Well...don&#39;t suppose you&#39;re going to need these for an interview now...
+    
+    You knock the dust off with your hands and and shove the shoes into your backpack.
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;run $inventory.push(&#39;shoes&#39;)&gt;&gt;
+
+[[You look for some more items.|Look for items]]
+
+[[That&#39;s everything worth taking, time to get moving!|Look around the Circle K]]</tw-passagedata><tw-passagedata pid="8" name="Cowboy hat" tags="" position="975,100" size="100,100">&lt;&lt;if $inventory.includes(&#39;hat&#39;)&gt;&gt;
+    You reach up. Oh yeah, the old hat&#39;s already on your head.
+&lt;&lt;else&gt;&gt;
+    Your grandpa used to be a rancher, before it became too expensive to feed and water his cattle. Losing his ranch broke his heart.
+
+    You put the dirty old hat on. It fits perfectly. Everyone always said you favored your grandpa, but you think they&#39;re wrong. You always felt you were more like your grandma.
+
+    You miss them. You were happy when you inherited their old Civic. Now? Not so much.
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;run $inventory.push(&#39;hat&#39;)&gt;&gt;
+
+[[You look for some more items.|Look for items]]
+
+[[That&#39;s everything worth taking, time to get moving!|Look around the Circle K]]</tw-passagedata><tw-passagedata pid="9" name="Travel mug" tags="" position="1100,100" size="100,100">&lt;&lt;if $inventory.includes(&#39;mug&#39;)&gt;&gt;
+    The travel mug is secured in the netting on the outside of your backpack.
+&lt;&lt;else&gt;&gt;
+    You grab the mug, pop the top off to pour out the last of the cold, bitter coffee you got at the rundown Route 66 gas station in New Mexico, put the lid back on, and store it in the netting on the outside of your backpack.
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;run $inventory.push(&#39;mug&#39;)&gt;&gt;
+
+[[You look for some more items.|Look for items]]
+
+[[That&#39;s everything worth taking, time to get moving!|Look around the Circle K]]</tw-passagedata><tw-passagedata pid="10" name="Key chain" tags="" position="1225,100" size="100,100">&lt;&lt;if $inventory.includes(&#39;keys&#39;)&gt;&gt;
+    You tap your pocket. The keys jangle reassuringly in response.
+&lt;&lt;else&gt;&gt;
+    You pull the keys out of the ignition and look at them. The rabbit&#39;s foot on the key chain is so worn that there&#39;s barely any fur left on it. That foot wasn&#39;t any luckier for you than it was for the rabbit.
+
+    You shake your head and drop the keys into your pocket.
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;run $inventory.push(&#39;keys&#39;)&gt;&gt;
+
+[[You look for some more items.|Look for items]]
+
+[[That&#39;s everything worth taking, time to get moving!|Look around the Circle K]]</tw-passagedata><tw-passagedata pid="11" name="Look around the Circle K" tags="" position="100,225" size="100,100">A [[road runs along the side of the Circle K|Manning House Way]] that looks like it ends at a very large house.
+
+To the east of the Circle K is a large multi-level [[parking garage|State building parking garage]].
+
+Looking back the way you came, you can see a very dark [[underpass|Congress St underpass]] under I-10.</tw-passagedata><tw-passagedata pid="12" name="Manning House Way" tags="" position="225,225" size="100,100">!!Manning House Way</tw-passagedata><tw-passagedata pid="13" name="State building parking garage" tags="" position="350,225" size="100,100">!!State building parking garage</tw-passagedata><tw-passagedata pid="14" name="Congress St underpass" tags="" position="475,225" size="100,100">!!Congress St underpass
 
 $inventory
 
@@ -153,11 +217,11 @@ You look around.
 
 &lt;&lt;button [[Look north|Road]]&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button [[Look south|Railroad tracks]]&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;&lt;button [[Look west|Freeway underpass]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Road" tags="" position="600,100" size="100,100">!!Road</tw-passagedata><tw-passagedata pid="6" name="Railroad tracks" tags="" position="725,100" size="100,100">!!Railroad tracks 
+&lt;&lt;button [[Look west|Freeway underpass]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Road" tags="" position="600,225" size="100,100">!!Road</tw-passagedata><tw-passagedata pid="16" name="Railroad tracks" tags="" position="725,225" size="100,100">!!Railroad tracks 
 
 Looking south, you see a single line of railroad tracks. They fade in and out of sight as they were covered up by the asphalt and concrete of the four lanes of Congress Boulevard and construction of parking lots and buildings that have since been torn down. They disappear completely to the north, but they seem to extend to the south at least as far as a building next to the tracks. The building looks like it could have been an old-fashioned railroad terminal. Apparently, the tracks were too much trouble to remove but the building was still useful. Unlike the other buildings around you, it looks like it could still be intact.
 
-&lt;&lt;button [[Check out the depot|El Paso and Southwestern depot]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Freeway underpass" tags="" position="850,100" size="100,100">!!Congress St underpass</tw-passagedata><tw-passagedata pid="8" name="El Paso and Southwestern depot" tags="" position="975,100" size="100,100">!!El Paso and Southwestern depot
+&lt;&lt;button [[Check out the depot|El Paso and Southwestern depot]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Freeway underpass" tags="" position="850,225" size="100,100">!!Congress St underpass</tw-passagedata><tw-passagedata pid="18" name="El Paso and Southwestern depot" tags="" position="975,225" size="100,100">!!El Paso and Southwestern depot
 
 As you approach the old terminal, you notice that the structure is intact but the windows are all broken out and the interior has been stripped. There is still a sign in masonry above the now empty doorway:
 

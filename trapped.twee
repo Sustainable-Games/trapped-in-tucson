@@ -35,9 +35,7 @@ You're leaving Texas, where the same drought impacting all of the southwest has 
 
 That's how you find yourself driving west in your grandparents' old Honda Civic. It can be hard to find gas stations that are still open along the way but, fortunately, the old girl gets pretty good gas mileage. You mostly share the highway with self-driving semis taking goods to and from the automated Port of Los Angeles to the few remaining urban centers in the south. The people who could afford to have long since moved north.
 
-As you approach an exit with a sign for Congress St, the check engine light comes on and smoke starts to curl from the edges of the hood. You take the exit and nurse the Honda into the Circle K lot at the bottom of the ramp.
-
-<<button [[Next|Circle K]]>><</button>>
+As you approach an exit with a sign for Congress St, the check engine light comes on and smoke starts to curl from the edges of the hood. You take the exit and nurse the Honda into the [[Circle K lot|Circle K]] at the bottom of the ramp.
 
 :: Circle K
 !!Circle K 
@@ -48,16 +46,114 @@ GET OUT while you can!
 
 Great idea, but obviously you aren't going anywhere in that old Civic. You take a closer look at the car. Nope. Definitely not going anywhere...there's an expanding pool of oil under the car and the smoke is just getting thicker.
 
-You reach into the backseat and grab your backpack. <<run $inventory.push('backpack')>>Then you look around to see if there's anything else you should take with you.
+You reach into the backseat and grab your backpack. <<run $inventory.push('backpack')>>Then you [[look to see|Look for items]] if there's anything else you should take with you.
 
-The clothes you planned to wear for job interviews are laid out on the seat: a long-sleeve white <<link 'dress shirt'>><<run $inventory.push('dress shirt')>><</link>> and some tan <<link 'khakis'>><<run $inventory.push('khakis')>><</link>>. There are also some <<link 'dress shoes'>><<run $inventory.push('dress shoes')>><</link>> (which are not very comfortable, but they are sturdy). Your grandpa's grubby old, misshapen <<link 'cowboy hat'>><<run $inventory.push('cowboy hat')>><</link>> is on the ledge above the backseat. He was once a rancher, before it became too hard to feed and water his livestock. A truck stop <<link 'travel mug'>><<run $inventory.push('mug')>><</link>> is in the cup holder and, of course, the <<link 'key chain'>><<run $inventory.push('keys')>><</link>> still hangs from the ignition. The rabbit's foot on the key chain is so worn that there's barely any fur left on it. That rabbit foot wasn't any luckier for you than it was for the rabbit.
+:: Look for items
 
-To the east of the Circle K is a large multi-level parking garage.
+A lightweight long-sleeve white unisex [[dress shirt|Dress shirt]] sits on top of some tan [[dress slacks|Dress slacks]]. A pair of [[dress shoes|Dress shoes]] are on the floor next to the clothes.
 
-<<button [[Check out the garage|State building parking garage]]>><</button>>
+Your grandpa's grubby old, misshapen [[cowboy hat|Cowboy hat]] is on the ledge above the backseat.
+
+A mostly empty truck stop [[travel mug|Travel mug]] is in the cup holder. 
+
+Of course, the [[key chain|Key chain]] still hangs from the ignition. 
+
+:: Dress shirt
+<<if $inventory.includes('shirt')>>
+    Your shirt is already neatly folded up in a pocket in your backpack.
+<<else>>
+    You pick up the shirt, carefully fold it, and put it into your backpack.
+<</if>>
+<<run $inventory.push('shirt')>>
+
+[[You look for some more items.|Look for items]]
+
+[[That's everything worth taking, time to get moving!|Look around the Circle K]]
+
+:: Dress slacks
+<<if $inventory.includes('slacks')>>
+    Your slacks are already neatly folded up in a pocket in your backpack.
+<<else>>
+    You pick up the slacks, shake the wrinkes out, and put them in your backpack.
+<</if>>
+<<run $inventory.push('slacks')>>
+
+[[You look for some more items.|Look for items]]
+
+[[That's everything worth taking, time to get moving!|Look around the Circle K]]
+
+:: Dress shoes
+<<if $inventory.includes('shoes')>>
+    Your shoes are already stuffed into your backpack.
+<<else>>
+    Well...don't suppose you're going to need these for an interview now...
+    
+    You knock the dust off with your hands and and shove the shoes into your backpack.
+<</if>>
+<<run $inventory.push('shoes')>>
+
+[[You look for some more items.|Look for items]]
+
+[[That's everything worth taking, time to get moving!|Look around the Circle K]]
+
+:: Cowboy hat
+<<if $inventory.includes('hat')>>
+    You reach up. Oh yeah, the old hat's already on your head.
+<<else>>
+    Your grandpa used to be a rancher, before it became too expensive to feed and water his cattle. Losing his ranch broke his heart.
+
+    You put the dirty old hat on. It fits perfectly. Everyone always said you favored your grandpa, but you think they're wrong. You always felt you were more like your grandma.
+
+    You miss them. You were happy when you inherited their old Civic. Now? Not so much.
+<</if>>
+<<run $inventory.push('hat')>>
+
+[[You look for some more items.|Look for items]]
+
+[[That's everything worth taking, time to get moving!|Look around the Circle K]]
+
+:: Travel mug
+<<if $inventory.includes('mug')>>
+    The travel mug is secured in the netting on the outside of your backpack.
+<<else>>
+    You grab the mug, pop the top off to pour out the last of the cold, bitter coffee you got at the rundown Route 66 gas station in New Mexico, put the lid back on, and store it in the netting on the outside of your backpack.
+<</if>>
+<<run $inventory.push('mug')>>
+
+[[You look for some more items.|Look for items]]
+
+[[That's everything worth taking, time to get moving!|Look around the Circle K]]
+
+:: Key chain
+<<if $inventory.includes('keys')>>
+    You tap your pocket. The keys jangle reassuringly in response.
+<<else>>
+    You pull the keys out of the ignition and look at them. The rabbit's foot on the key chain is so worn that there's barely any fur left on it. That foot wasn't any luckier for you than it was for the rabbit.
+
+    You shake your head and drop the keys into your pocket.
+<</if>>
+<<run $inventory.push('keys')>>
+
+[[You look for some more items.|Look for items]]
+
+[[That's everything worth taking, time to get moving!|Look around the Circle K]]
+
+:: Look around the Circle K 
+
+A [[road runs along the side of the Circle K|Manning House Way]] that looks like it ends at a very large house.
+
+To the east of the Circle K is a large multi-level [[parking garage|State building parking garage]].
+
+Looking back the way you came, you can see a very dark [[underpass|Congress St underpass]] under the highway.
+
+:: Manning House Way
+!!Manning House Way
 
 :: State building parking garage
 !!State building parking garage 
+
+:: Congress St underpass
+!!Congress St underpass
 
 $inventory
 
