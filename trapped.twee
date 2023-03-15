@@ -152,11 +152,6 @@ Looking back the way you came, you can see a very dark [[underpass|Congress St u
 :: State building parking garage
 !!State building parking garage 
 
-:: Congress St underpass
-!!Congress St underpass
-
-$inventory
-
  The concrete is cracking and some chunks have fallen (or been pushed) out of the walls. There are a number of rusting hulks parked there, including what looks like an entire fleet of abandoned state vehicles. In addition to graffiti, there are some makeshift shelters built from scavenged building materials. 
 
 As you approach, a barrage of rocks slams to the dirt around you. Apparently, the residents don't want to be disturbed.
@@ -165,23 +160,26 @@ Beyond the parking garage, you spot the State of Arizona office building through
 
 It seems someone expressed their displeasure with the government before abandoning the city.
 
-You look around.
+Probably not worth continuing in that direction.
 
-<<button [[Look north|Road]]>><</button>>
-<<button [[Look south|Railroad tracks]]>><</button>>
-<<button [[Look west|Freeway underpass]]>><</button>>
+You look around again. You're standing on the edge of that road that heads north to the large house. In fact from here, it looks like a mansion. Maybe you should [[check it out|Manning House Way]]?
 
-:: Road
-!!Road
+You just noticed some [[old railroad tracks|Railroad tracks]] at your feet. 
+
+The [[underpass under I-10|Congress St underpass]] is still behind you.
 
 :: Railroad tracks
 !!Railroad tracks 
 
 Looking south, you see a single line of railroad tracks. They fade in and out of sight as they were covered up by the asphalt and concrete of the four lanes of Congress Boulevard and construction of parking lots and buildings that have since been torn down. They disappear completely to the north, but they seem to extend to the south at least as far as a building next to the tracks. The building looks like it could have been an old-fashioned railroad terminal. Apparently, the tracks were too much trouble to remove but the building was still useful. Unlike the other buildings around you, it looks like it could still be intact.
 
-<<button [[Check out the depot|El Paso and Southwestern depot]]>><</button>>
+You decide to [[check out the depot|El Paso and Southwestern depot]].
 
-:: Freeway underpass
+On the other hand, maybe you should [[see what's at the end of that road to the north|Manning House Way]].
+
+Maybe you should just get away from this area altogether. Wonder [[what's on the other side of the underpass|Congress St underpass]]?
+
+:: Congress St underpass
 !!Congress St underpass
 
 :: El Paso and Southwestern depot
