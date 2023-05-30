@@ -6,7 +6,7 @@
         {
             "label": "tweego win build",
             "type": "shell",
-            "command": "tweego -o trapped/index.html trapped.twee",
+            "command": "tweego -o trapped/index.html trapped_source",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -16,7 +16,7 @@
         {
             "label": "tweego mac build",
             "type": "shell",
-            "command": "$HOME/tweego-2.1.1-macos-x64/tweego -o trapped/index.html trapped.twee",
+            "command": "$HOME/tweego-2.1.1-macos-x64/tweego -o trapped/index.html trapped_source",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
