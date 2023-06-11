@@ -1,9 +1,9 @@
 :: Congress St underpass
 !!Congress St underpass
 
-You start walking down Congress toward the underpass. It's so bright out here in the unrelenting desert sun. You can see the opening on the far side, but it's hard to see much of anything in between. The streets are deserted. Who else would be out in the blazing sun - other than a fool like you? Perhaps caution is in order?
+You start walking down Congress toward the underpass. It's so bright out here in the unrelenting desert sun. You can see the opening on the far side, but it's hard to see much of anything in between. The streets are deserted. Who else would be out in the blazing sun - other than a fool like you? 
 
-[[You decide to return the way you came|Look around the Circle K]].
+Perhaps caution is in order? [[You decide to return the way you came|Look around the Circle K]].
 
 You decide you're being paranoid. [[You walk into the darkness of the underpass|In the Congress St underpass]].
 
@@ -16,11 +16,12 @@ Your eyes are starting to adjust to the dark. You see some people sitting or lyi
 
 You hear someone call out. It's hard to tell with the echoes off of all the concrete. Was that someone on the other side or is there someone behind you?
 
-[[You ignore the call|Ignore call]]. Maybe if you pretend you didn't hear anything, they'll leave you alone.
+[[Maybe if you pretend you didn't hear anything, they'll leave you alone|Ignore call]].
 
-[[You answer with a hello|Say hello]].
+Maybe there's someone who could help you. [[You reply with a hello|Say hello]].
 
-Time to get out of here. [[You run|Run from underpass]]!
+[[Time to get out of here|Run from underpass]]!
+
 
 :: Ignore call
 
