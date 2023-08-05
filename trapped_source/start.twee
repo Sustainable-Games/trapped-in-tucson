@@ -8,9 +8,9 @@ You are travelling west on I-10 seeking work and a safe place to live. You've he
 
 You're leaving Texas, where the same drought impacting all of the southwest has made life nearly impossible. The crash of the oil markets was the end of the Texas economy. Now, no one wants to live there.
 
-That's how you find yourself driving west in your grandparents' old Honda Civic. It can be hard to find gas stations that are still open along the way but, fortunately, the old girl gets pretty good gas mileage. You mostly share the highway with self-driving semis taking goods to and from the automated Port of Los Angeles to the few remaining urban centers in the south. The people who could afford to have long since moved north.
+That's how you find yourself driving west in your grandparents' old Prius Plus. You mostly share the highway with self-driving semis taking goods to and from the automated Port of Los Angeles to the few remaining urban centers in the south. The people who could afford to have long since moved north.
 
-As you approach an exit with a sign for Congress St, the check engine light comes on and smoke starts to curl from the edges of the hood. You take the exit and nurse the Honda into the [[Circle K lot|Circle K]] at the bottom of the ramp.
+As you approach an exit with a sign for Congress St, red warning indicators light up like a Christmas tree. Damn it! You got a good charge this morning with the portable solar power station you carry in the trunk and you even have half a tank of gas from the rare open gas station you found in New Mexico.The heat must have been too much for the electronics in your old car. You take the exit and coast into the [[Circle K lot|Circle K]] at the bottom of the ramp.
 
 :: Circle K
 !!Circle K 
@@ -19,9 +19,9 @@ The sign is so faded by the sun that the red logo is now a light pink. The gas p
 
 GET OUT while you can!
 
-Great idea, but obviously you aren't going anywhere in that old Civic. You take a closer look at the car. Nope. Definitely not going anywhere...there's an expanding pool of oil under the car and the smoke is just getting thicker.
+Great idea, but obviously you aren't going anywhere right now. The control panel is completely dead and the starter won't respond. You've never seen this happen before. Time to take a look around to see if you can get some help...or at least somewhere to get out of the heat. It's already uncomfortable, even though the car's only been without power for a couple of minutes.
 
-You reach into the backseat and grab your backpack. <<run $inventory.push('backpack')>>Then you [[look to see|Look for items]] if there's anything else you should take with you.
+You reach into the backseat and grab your backpack. <<run $inventory.push('backpack')>>You wonder if you should [[take anything with you|Look for items]] or just [[start to look around|Look around the Circle K]]. It is hard to know how safe it will be to leave anything in the car here.
 
 :: Look for items
 
